@@ -5,24 +5,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/BryanIsAProfessional/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/BryanIsAProfessional/routeserviceAPI">
   </a>
 
-  <h3 align="center">project_title</h3>
-
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/BryanIsAProfessional/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/BryanIsAProfessional/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/BryanIsAProfessional/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/BryanIsAProfessional/repo_name/issues">Request Feature</a>
-  </p>
+  <h3 align="center">Route Service API</h3>
 </p>
 
 
@@ -45,11 +31,8 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>api/distancematrix/json?origins=Mönchhofstraße+66%2C+69120+Heidelberg%2C+Germany&destinations=Gerhart-Hauptmann-Straße+12%2C+69120+Heidelberg%2C+Germany
+    <li><a href="#acknowledgements">Acknowledgements</a></li>api
   </ol>
 </details>
 
@@ -58,18 +41,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`BryanIsAProfessional`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+This project was built as a coding test for an interview. The goal was to create a service that could Geocode, create distance matrices, and route between two points using the same inputs and outputs as the Google Maps API. 
 
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [Flask](https://pypi.org/project/Flask/)
 
 
 
@@ -78,40 +55,17 @@ Here's a blank template to get started:
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
 1. Clone the repo
    ```sh
    git clone https://github.com/BryanIsAProfessional/repo_name.git
    ```
-2. Install NPM packages
+2. Open start.sh, comment the start script and uncomment the build section. This will download the prerequisite repositories. Run the command again with the build section commented out to start the server.
    ```sh
-   npm install
-   ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/BryanIsAProfessional/repo_name/issues) for a list of proposed features (and known issues).
+   ./start.sh
+   ```   
+3. You can now query the API at https://localhost:5000/query
 
 
 
@@ -127,9 +81,8 @@ Project Link: [https://github.com/BryanIsAProfessional/routeserviceAPI](https://
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+* [OpenRouteService](https://openrouteservice.org/)
+* [Pelias](https://www.pelias.io/)
 
 
 
