@@ -32,7 +32,7 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>api
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
