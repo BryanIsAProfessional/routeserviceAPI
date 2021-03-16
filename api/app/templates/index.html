@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query the geocoder</title>
+</head>
+<body>
+    <h1>Geocode an address</h1>
+    <form>
+        <label for="address">Address</label><br>
+        <input type="text" id="address" name="address" value="42 Wallaby Way, Sydney"><br>
+        <input type="submit" value="Get JSON" formaction="/api/geocoder/json">
+        <input type="submit" value="Get XML" formaction="/api/geocoder/xml">
+    </form><br><br>
+    <h1>Get a distance matrix between two addresses</h1>
+    <form>
+        <label for="origins">Starting address</label><br>
+        <input type="text" id="origins" name="origins" value="Mönchhofstraße 66, 69120 Heidelberg, Germany"><br>
+        <label for="destinations">Destination address</label><br>
+        <input type="text" id="destinations" name="destinations" value="Gerhart-Hauptmann-Straße 12, 69120 Heidelberg, Germany"><br>
+        <input type="submit" value="Get JSON" formaction="/api/distancematrix/json">
+        <input type="submit" value="Get XML" formaction="/api/distancematrix/xml">
+    </form><br><br>
+    <h1>Get directions between two addresses</h1>
+    <form>
+        <label for="origin">Starting address</label><br>
+        <input type="text" id="origin" name="origin" value="1313 Disneyland Dr, Anaheim, CA 92802, United States"><br>
+        <label for="destination">Destination address</label><br>
+        <input type="text" id="destination" name="destination" value="100 Universal City Plaza, Universal City, CA 91608, United States"><br>
+        <input type="submit" value="Get JSON" formaction="/api/directions/json">
+    </form>
+</body>
+</html>
